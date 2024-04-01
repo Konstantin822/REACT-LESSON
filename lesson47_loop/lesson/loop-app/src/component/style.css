@@ -1,0 +1,9 @@
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-underage {
+    background-color: green;
+    border-radius: 10px;
+}
