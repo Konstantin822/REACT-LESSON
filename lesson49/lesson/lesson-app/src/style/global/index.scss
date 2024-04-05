@@ -1,0 +1,15 @@
+body {
+    font: var(--main-font);
+    background-color: var(--background-color);
+    color: var(--black-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
+}

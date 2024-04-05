@@ -1,0 +1,25 @@
+:root {
+    --main-font: "Work Sans", sans-serif;
+    --sub-font: "Open Sans", sans-serif;
+
+    --h1: 300 83px/83px var(--main-font);
+    --p1: 400 14px/23px var(--sub-font);
+    --name-font: 700 14px/23px var(--sub-font);
+    --position-font: 400 14px/23px var(--sub-font);
+
+    --type-font: 400 48px/48px var(--main-font);
+    --type-status-font: 400 16px/normal var(--main-font);
+
+    --header-card-font: 400 40px/40px var(--main-font);
+    --title-card-font: 400 18px/23px var(--sub-font);
+    --text-card-font: 300 14px/23px var(--sub-font);
+}
+
+
+.h1 {
+    font: var(--h1);
+}
+
+.p1 {
+    font: var(--p1);
+}

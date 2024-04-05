@@ -1,0 +1,25 @@
+.header {
+
+    &__container {
+        margin: 31px 55px 0 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 50px;
+
+        &-home--active {
+            background-color: var(--dop-color);
+        }
+    }
+
+    &__link {
+        font: var(--type-status-font);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--black-color);
+    }
+}
