@@ -1,0 +1,127 @@
+// Section hero
+.hero {
+    margin-top: 71px;
+
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        position: relative;
+
+        &_title {
+            position: absolute;
+            bottom: 33px;
+            left: 19px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            &-name {
+                font: var(--type-font);
+                color: var(--white-color);
+                text-transform: uppercase;
+            }
+
+            &-status {
+                font: var(--type-status-font);
+                color: var(--dop-color);
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__content {
+        width: 648px;
+        background-color: var(--white-color);
+        border-radius: 15px;
+        text-align: left;
+    }
+
+    &__title {
+        padding: 70px 90px 32px 32px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        padding: 0 76px 46px 32px;
+    }
+
+    &__owner {
+        display: flex;
+        gap: 16px;
+        padding-left: 32px;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+}
+
+// Section hero END
+
+// Section instructions
+
+.instructions {
+    margin: 80px 0;
+
+    &__container {
+        background-color: var(--instructions-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header {
+        position: relative;
+        margin-top: 86px;
+
+        &_title {
+            font: var(--header-card-font);
+            position: absolute;
+            color: var(--white-color);
+            bottom: 67px;
+            left: 45px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 1098px;
+        margin: 55px 0 86px 0;
+    }
+
+    &__card {
+        background-color: var(--white-color);
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 28.5px 46.5px;
+        border-radius: 16px;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: var(--dop-color);
+        font: var(--title-card-font);
+    }
+
+    &__icons img {
+        width: 85px;
+    }
+
+    &__text {
+        font: var(--text-card-font);
+    }
+}
+
+// Section instructions END
