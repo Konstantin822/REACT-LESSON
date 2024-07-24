@@ -14,6 +14,9 @@ function App() {
     item.age >= 18 && <h1 key={item.id}>Ви повнолітній: {item.name}</h1>
   ))
 
+  // Условие && { Результат }
+  // Условие ? { Результат если true} : { Результат если false}
+
   return (
     <>
       <h2>Render v1</h2>
@@ -33,6 +36,7 @@ function App() {
         testUsers2 && testUsers2.map((item, index) => (
           <h1 key={index}>{item.name}</h1>
         ))
+
       }
       <hr />
 

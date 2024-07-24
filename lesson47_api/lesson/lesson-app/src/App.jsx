@@ -1,23 +1,33 @@
-import useFetch from 'react-fetch-hook';
+import useFetch from "react-fetch-hook";
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './Pages/Home/Home.jsx';
+import SinglePost from "./components/single-post/SinglePost.jsx";
 
 function App() {
+
   const { data, isLoading } = useFetch('https://rickandmortyapi.com/api/character')
 
-  console.log(data?.results);
+  console.log(data?.results)
 
-  const list = data?.results.map(item =>
-    <div className="item">
-      <img src={item.image}></img>
-      <h2>{item.name}</h2>
-    </div>
+  return (
+    <>
+      {/* <Home /> */}
+      <h1>Header</h1>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+
+          {data?.results.map(item => <Route key={item.id} path={`/page/${item.name}`} element={<SinglePost item={item} />} />)}
+
+          <Route path='*' element={<h2>404</h2>} />
+        </Routes>
+      </main>
+
+
+      <h2>Footer</h2>
+    </>
   )
-  return isLoading ? (
-    <div>...Loading</div>
-  ) : (
-    <div className="App">
-      {list}
-    </div>
-  );
 }
 
 export default App;

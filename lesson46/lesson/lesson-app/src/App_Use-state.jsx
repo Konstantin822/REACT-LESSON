@@ -19,11 +19,25 @@ export function About() {
 export function Test1() {
   return (
     <div>
-      <h1>Test</h1>
+      <h1>Test1</h1>
     </div>
   )
 }
 
+export function Test2() {
+  return (
+    <div>
+      <h1>Test2</h1>
+    </div>
+  )
+}
+export function Test3() {
+  return (
+    <div>
+      <h1>Test3</h1>
+    </div>
+  )
+}
 function App() {
 
   // let [результат, функция меняющая результат] = useState(дефолтное занчение)
@@ -48,7 +62,8 @@ function App() {
       </nav>
 
       <button onClick={() => { setTabContent(Test1) }}>1</button>
-
+      <button onClick={() => { setTabContent(Test2) }}>2</button>
+      <button onClick={() => { setTabContent(Test3) }}>3</button>
       {section}
 
       {tabContent}

@@ -18,6 +18,7 @@ function App() {
         {/* <Nav />
         <img src={logo} alt=""></img> */}
         <h1>{hero.title}</h1>
+        <Nav />
         <img src={hero.img}></img>
         <p>{hero.description}</p>
       </div>
